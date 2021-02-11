@@ -147,3 +147,14 @@ p span:hover {
     font-weight: 500;
     cursor: context-menu;
 }
+
+@media only screen and (max-width: 425px) {
+    .image-box img {
+        display: table;
+        margin: 0 auto;
+        max-width: 345px;
+    }
+    .image-box {
+        width: 100%;
+    }
+}
