@@ -8,7 +8,7 @@ export function HeaderMain () {
     let typewriter = new Typewriter(textEL.current, {
       delay: 25,
       cursorClassName: '',
-      strings: ['JavaScript', 'TypeScript', 'React JS & React Native', 'Node JS'],
+      strings: ['JavaScript', 'TypeScript & Node JS', 'React JS & React Native',],
       autoStart: true,
     })
     typewriter
