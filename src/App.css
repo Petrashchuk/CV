@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: "Montserrat";
+}
+
+h2, h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+header {
+    background-color: #408582;
+    padding: 50px 30px 120px 30px;
+}
+
+.wrapper {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.white_color {
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.white-box {
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    -webkit-box-shadow: 0 0 10px 0 #e7e7e7;
+    -moz-box-shadow: 0 0 10px 0 #e7e7e7;
+    box-shadow: 0 0 10px 0 #e7e7e7;
+    padding: 30px;
+    margin-bottom: 35px;
+}
+
+.top-box {
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    margin-top: -80px;
+    -webkit-box-shadow: 0 0 10px 0 #b4b4b4;
+    -moz-box-shadow: 0 0 10px 0 #b4b4b4;
+    box-shadow: 0 0 10px 0 #b4b4b4;
+    margin-bottom: 20px;
+}
+
+.fl {
+    float: left;
+}
+
+.bio-box {
+    padding: 15px 25px;
+}
+
+#text {
+    font-weight: 300;
+    font-size: 28px;
+    color: #000000;
+    min-height: 35px;
+}
+
+.cv ~ span {
+    float: right;
+    margin-top: 12px;
+    display: none;
+}
+
+.social-links a:hover {
+    background-color: #4ba4a1;
+}
+
+
+.social-links a {
+    display: table;
+    background-color: #408582;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.block-title {
+    color: #408582;
+}
+
+.bio-box a {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a i {
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.bio-box b {
+    display: inline-block;
+    min-width: 90px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.image-box img {
+    max-width: 375px;
+    vertical-align: top;
+    height: 295px;
+}
+
+p span {
+    transition: .3s ease-in-out;
+}
+
+p span:hover {
+    color: #408582;
+
+    font-weight: 500;
+    cursor: context-menu;
+}
