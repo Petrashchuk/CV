@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    $('.icon-download').on('click', (e) => {
+    $('.icon-download').on('click', () => {
+        $('.download_title').hide();
         const opt = {
             margin: 1,
             filename: 'Andrii Petrashchuk.pdf',
@@ -23,7 +24,7 @@ $(document).ready(function () {
         let typewriter = new Typewriter(textEl, {
             delay: 20,
             cursorClassName: '',
-            strings: ['JavaScript', 'TypeScript & Node JS', 'React JS & React Native',],
+            strings: ['JavaScript', 'TypeScript & Node JS', 'React JS & React Native'],
             autoStart: true,
         })
         typewriter
