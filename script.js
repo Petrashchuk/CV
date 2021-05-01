@@ -16,20 +16,19 @@ $(document).ready(function () {
     $('.icon-download').on('mouseout', (e) => {
         $('.download_title').hide();
     })
+    titleTyping();
 
-    const strings = ['JavaScript', 'TypeScript & Node JS', 'React JS & React Native', "I'm Andrii Petrashchuk"];
-    var i = 0;
-    var [txt] = strings.reverse();
-    var speed = 100;
-    typeWriter()
-
-    function typeWriter() {
-        debugger
-        if (i < txt.length) {
-            var text = $("#text").html();
-            $('#text').html(text += txt.charAt(i));
-            i++;
-            setTimeout(typeWriter, speed);
-        }
+    function titleTyping() {
+        const textEl = document.getElementById('text')
+        let typewriter = new Typewriter(textEl, {
+            delay: 20,
+            cursorClassName: '',
+            strings: ['JavaScript', 'TypeScript & Node JS', 'React JS & React Native',],
+            autoStart: true,
+        })
+        typewriter
+            .typeString("I'm Andrii Petrashchuk")
+            .callFunction(() => textEl.lastChild.remove())
+            .start()
     }
 })
