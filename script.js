@@ -16,4 +16,20 @@ $(document).ready(function () {
     $('.icon-download').on('mouseout', (e) => {
         $('.download_title').hide();
     })
+
+    const strings = ['JavaScript', 'TypeScript & Node JS', 'React JS & React Native', "I'm Andrii Petrashchuk"];
+    var i = 0;
+    var [txt] = strings.reverse();
+    var speed = 100;
+    typeWriter()
+
+    function typeWriter() {
+        debugger
+        if (i < txt.length) {
+            var text = $("#text").html();
+            $('#text').html(text += txt.charAt(i));
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
 })
